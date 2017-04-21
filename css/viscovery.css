@@ -307,9 +307,16 @@ section.container {
   margin: 30px 0;
 }
 
-.sdk-download ul li {
+.sdk-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.sdk-btns a {
   display: flex;
   align-items: center;
+  color: #212121;
+  text-decoration: none;
   height: 66px;
   width: 300px;
   padding: 0 32px;
@@ -320,10 +327,8 @@ section.container {
   margin: 0 15px;
 }
 
-.sdk-download li a {
-  color: #212121;
-  text-decoration: none;
-  margin-left:16px;
+.sdk-btns i{
+  margin-right : 16px;
 }
 
 .section-5 .title-text {
