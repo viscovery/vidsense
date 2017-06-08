@@ -377,3 +377,7 @@ section.container {
 .bg-profit {
   background-image: url(../img/image-profit.png);
 }
+
+.heading-1 > .trademark {
+  font-size: 24px;
+}
