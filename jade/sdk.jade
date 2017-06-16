@@ -1,0 +1,42 @@
+doctype html
+html
+  include frame/htmlHead.jade
+  body
+    .container-fluid
+      include frame/sdk_nav.jade
+
+      section.sdk-banner
+        h3 SDK DOCUMENT
+      section.container.sdk-download
+        .row
+          h4 Select your operating system for specific SDK document
+          .col-xs-12.col-sm-4.col-lg-4
+            a.sdk-btns(href='https://viscovery.github.io/viscovery-ad-sdk-android/', target='_blank')
+              i.fa.fa-android.fa-2x(aria-hidden='true')
+              | Android SDK
+          .col-xs-12.col-sm-4.col-lg-4
+            a.sdk-btns(href='https://viscovery.github.io/viscovery-ad-sdk-ios/', target='_blank')
+              i.fa.fa-apple.fa-2x(aria-hidden='true')
+              | iOS SDK
+          .col-xs-12.col-sm-4.col-lg-4
+            a.sdk-btns(href='https://viscovery.github.io/viscovery-ad-sdk-html5/', target='_blank')
+              i.fa.fa-television.fa-2x(aria-hidden='true')
+              | Web SDK
+      include frame/footer.jade
+  script.
+    var navIsOpen=false;
+    document.getElementById("navToggle").addEventListener("click", navToggle);
+    function navToggle(){
+      navIsOpen = !navIsOpen;
+      var element = document.getElementById("nav");
+      var elementIcon = document.getElementById("navToggleIcon");
+      if(navIsOpen){
+        element.classList.add("navOpen");
+        elementIcon.classList.remove("fa-bars");
+        elementIcon.classList.add("fa-times");
+      }else{
+        element.classList.remove("navOpen");
+        elementIcon.classList.remove("fa-times");
+        elementIcon.classList.add("fa-bars");
+      }
+    }

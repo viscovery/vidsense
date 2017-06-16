@@ -1,0 +1,97 @@
+.footer-logo, .social-nav {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #262626;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  position: relative;
+  width: 155px;
+  height: 37px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  font-size: 1px;
+  line-height: 9999;
+  background-image: url(../img/logo-white.svg);
+}
+
+.location-block {
+  width: calc(100% - 155px - 20px);
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
+.locations {
+  width: 400px;
+  display: inline-block;
+}
+
+.location-list {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.location-title {
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.location-text {
+  width: 340px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 22px;
+  font-weight: 200;
+}
+
+.social-block {
+  position: relative;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.social-nav {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social-nav:last-child {
+  margin-right: 0;
+}
+
+.bg-facebook {
+  background-image: url(../img/icon-facebook.svg);
+}
+
+.bg-weibo {
+  background-image: url(../img/icon-weibo.svg);
+}
+
+.bg-linkedin {
+  background-image: url(../img/icon-linkedin.svg);
+}
+.color-white-40a {
+  color: hsla(0,0%,100%,0.4);
+}

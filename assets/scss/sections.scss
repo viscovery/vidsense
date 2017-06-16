@@ -1,0 +1,133 @@
+.section_1{
+  position: relative;
+  height: 500px;
+  background: url('..//img/cover.png');
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  .cover-float-block {
+    position : absolute;
+    left : 10.6%;
+    top : 16%;
+    background : rgba(255,255,255,0.8);
+    min-width: 510px;
+    max-width: 40%;
+    padding: 30px;
+    .content {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+    button {
+      font-size: 18px;
+      padding:19px 0;
+      width: 50%;
+      margin-top: 30px;
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  font-size: 36px;
+  background: #E24522;
+  color: #FFFFFF;
+  padding: 5%;
+  text-align: center;
+  font-weight:300;
+}
+.apply-step {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  margin: auto;
+  display: block;
+  vertical-align: top;
+  overflow: hidden;
+  font-size: 1px;
+  line-height: 9999;
+}
+.section-5 h3 {
+  color: #212121;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-5 p , .section-6 p {
+  color: #858585;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bg-apply {
+  background-image: url(../img/image-apply.png);
+}
+
+.bg-sdk {
+  background-image: url(../img/image-sdk.png);
+}
+
+.bg-profit {
+  background-image: url(../img/image-profit.png);
+}
+
+.heading-1 > .trademark {
+  font-size: 24px;
+}
+.section-7{
+  button{
+    padding: 18px 75px;
+    font-size: 25px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 767px) {
+  .section_1{
+    background-position: right bottom;
+    .cover-float-block {
+      position: absolute;
+      left: 0;
+      top: 0; 
+      height: 100%;
+      width: 100%;
+      min-width: 100%;
+      max-width: none;
+      background: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      padding: 10px;
+      .heading-1{
+        padding-top: 100px;
+      }
+      .content {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+      button {
+        font-size: 18px;
+        padding:19px 0;
+        width: 90%;
+        margin-top: 30px;
+      }
+    }
+  }
+  .banner {
+    padding: 30px 10px;
+    font-size: 20px;
+  }
+  .section-6{
+    text-align: center;
+  }
+  .section-7{
+    text-align: center;
+    button{
+      font-size: 18px;
+      padding:19px 0;
+      width: 90%;
+      margin-top: 30px;
+    }
+  }
+}

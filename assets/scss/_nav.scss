@@ -1,0 +1,129 @@
+.topnav {
+  background: #FFFFFF;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 115px;
+  .nav-logo {
+    width : 150px;
+    height: 32px;
+    background: url("../img/logo_red.svg") no-repeat ;
+  }
+  .nav-items {
+    height: 60px;
+    ul{
+      display: block;
+      margin: 0;
+      height: 60px;
+      line-height:57px;
+      li{
+        height: 60px;
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
+        list-style: none;
+        padding: 0 1em;
+        a{
+          color: rgba(26,10,10,.4);
+          text-decoration: none;
+        }
+      }
+      li:after, li.active:after {
+        content: '';
+        display: block;
+        line-height:45px;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        background: transparent;
+        transition: width .3s ease, background-color .3s ease;
+      }
+      li.active {
+        a{
+          color: rgba(26,10,10,1);
+        }
+      }
+      li:hover {
+        a {
+          color: rgba(26,10,10,1);
+        }
+      }
+      li:hover:after, li.active:after {
+        width: 100%;
+        background: #F31F00;
+        a {
+          color: rgba(26,10,10,1);
+        }
+      }
+    }
+  }
+  .navToggle{
+    float:right;
+    outline: none;
+    display: none;
+    margin-right: 10px;
+    background: #fff;
+    i{
+      font-size: 3em;
+      color: #E44412;
+    }
+    &:hover{
+      background: #E44412;
+      i{
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 767px) {
+  .topnav{
+    padding: 0;
+  }
+  .nav-logo{
+    margin-left: 10px;
+  }
+  .topnav {
+    .nav-items{
+      width: 100%;
+      left: 0;
+      top: 0;
+      padding: 10px 0;
+      position: fixed;
+      .navToggle{
+        display: inline-block
+      }
+      ul{
+        position: fixed;
+        background: #fff;
+        top:60px;
+        width: 100%;
+        height: 0;
+        flex-direction:column;
+        transition: height .3s ease;
+        display: block;
+        overflow: hidden;
+        li{
+          display: block;
+          float: none;
+          line-height: 60px;
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+}
+.navOpen{
+  height: 100% !important;
+}

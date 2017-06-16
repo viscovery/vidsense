@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>VidSense - SDK</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/viscovery.css" >
-  <link rel="stylesheet" type="text/css" href="css/grid12.css" >
-  <meta name="viewport" content="width=1265">
-</head>
-<body>
-  <div class="container-fluid">
-    <nav class="topnav">
-      <div class="nav-logo">
-        <a href="index.html" target="_self" class="nav-block"></a>
-      </div>
-      <div class="nav-items">
-        <a href="index.html">ABOUT</a>
-        <a href="sdk.html" class="active">SDK DOCUMENT</a>
-        <a href="https://goo.gl/forms/jmXPlXu5b6nH7Ig62" target="_blank">
-          <button class="primary nav-apply">APPLY NOW</button>
-        </a>
-      </div>
-    </nav>
-
-    <section class="banner sdk-banner">
-      SDK DOCUMENT
-    </section>
-
-    <section class="sdk-download">
-      <div>Select your operating system for specific SDK document</div>
-      <div class="sdk-btns">
-        <a href="https://viscovery.github.io/viscovery-ad-sdk-android/" target="_blank">
-          <i class="fa fa-android fa-2x" aria-hidden="true"></i>
-          Android SDK
-        </a>
-        <a href="https://viscovery.github.io/viscovery-ad-sdk-ios/" target="_blank">
-          <i class="fa fa-apple fa-2x" aria-hidden="true"></i>
-          iOS SDK
-        </a>
-        <a href="https://viscovery.github.io/viscovery-ad-sdk-html5/" target="_blank">
-          <i class="fa fa-television fa-2x" aria-hidden="true"></i>
-          Web SDK
-        </a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <nav>
-        <a class="social-nav bg-facebook" href="https://zh-tw.facebook.com/viscovery.co/" target="_blank"></a>
-        <a class="social-nav bg-weibo" href="http://tw.weibo.com/viscovery" target="_blank"></a>
-        <a class="social-nav bg-linkedin" href="https://www.linkedin.com/company-beta/3637491/?pathWildcard=3637491" target="_blank"></a>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>VidSense</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="topnav">
+        <div class="nav-logo"><a class="nav-block" href="index.html" target="_self"></a></div>
+        <div class="nav-items">
+          <button class="navToggle" id="navToggle" type="button"><i class="fa fa-bars fa-5" id="navToggleIcon" aria-hidden="true"></i></button>
+          <ul id="nav">
+            <li><a href="index.html">ABOUT</a></li>
+            <li class="active"><a href="sdk.html">SDK DOCUMENT</a></li>
+            <li><a href="https://goo.gl/forms/jmXPlXu5b6nH7Ig62" target="_blank">
+                <button class="primary nav-apply">APPLY NOW</button></a></li>
+          </ul>
+        </div>
       </nav>
-      <p class="color-white-40a">Viscovery 2017 © Viscovery All rights reserved</p>
-    </footer>
-  </div>
-</body>
+      <section class="sdk-banner">
+        <h3>SDK DOCUMENT</h3>
+      </section>
+      <section class="container sdk-download">
+        <div class="row">
+          <h4>Select your operating system for specific SDK document</h4>
+          <div class="col-xs-12 col-sm-4 col-lg-4"><a class="sdk-btns" href="https://viscovery.github.io/viscovery-ad-sdk-android/" target="_blank"><i class="fa fa-android fa-2x" aria-hidden="true"></i>Android SDK</a></div>
+          <div class="col-xs-12 col-sm-4 col-lg-4"><a class="sdk-btns" href="https://viscovery.github.io/viscovery-ad-sdk-ios/" target="_blank"><i class="fa fa-apple fa-2x" aria-hidden="true"></i>iOS SDK</a></div>
+          <div class="col-xs-12 col-sm-4 col-lg-4"><a class="sdk-btns" href="https://viscovery.github.io/viscovery-ad-sdk-html5/" target="_blank"><i class="fa fa-television fa-2x" aria-hidden="true"></i>Web SDK</a></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <nav><a class="social-nav bg-facebook" href="https://zh-tw.facebook.com/viscovery.co/" target="_blank"></a><a class="social-nav bg-weibo" href="http://tw.weibo.com/viscovery" target="_blank"></a><a class="social-nav bg-linkedin" href="https://www.linkedin.com/company-beta/3637491/?pathWildcard=3637491" target="_blank"></a></nav>
+        <p class="color-white-40a">Viscovery 2017 © Viscovery All rights reserved</p>
+      </footer>
+    </div>
+  </body>
+  <script>
+    var navIsOpen=false;
+    document.getElementById("navToggle").addEventListener("click", navToggle);
+    function navToggle(){
+      navIsOpen = !navIsOpen;
+      var element = document.getElementById("nav");
+      var elementIcon = document.getElementById("navToggleIcon");
+      if(navIsOpen){
+        element.classList.add("navOpen");
+        elementIcon.classList.remove("fa-bars");
+        elementIcon.classList.add("fa-times");
+      }else{
+        element.classList.remove("navOpen");
+        elementIcon.classList.remove("fa-times");
+        elementIcon.classList.add("fa-bars");
+      }
+    }
+  </script>
 </html>

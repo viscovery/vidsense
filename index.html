@@ -3,95 +3,68 @@
   <head>
     <meta charset="UTF-8">
     <title>VidSense</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/viscovery.css" >
-    <link rel="stylesheet" type="text/css" href="css/grid12.css" >
-    <meta name="viewport" content="width=1265">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
   </head>
   <body>
     <div class="container-fluid">
       <nav class="topnav">
-        <div class="nav-logo">
-          <a href="index.html" target="_self" class="nav-block"></a>
-        </div>
+        <div class="nav-logo"><a class="nav-block" href="index.html" target="_self"></a></div>
         <div class="nav-items">
-          <a href="index.html" class="active">ABOUT</a>
-          <a href="sdk.html">SDK DOCUMENT</a>
-          <a href="https://goo.gl/forms/jmXPlXu5b6nH7Ig62" target="_blank">
-            <button class="primary nav-apply">APPLY NOW</button>
-          </a>
+          <button class="navToggle" id="navToggle" type="button"><i class="fa fa-bars fa-5" id="navToggleIcon" aria-hidden="true"></i></button>
+          <ul id="nav">
+            <li class="active"><a href="index.html">ABOUT</a></li>
+            <li><a href="sdk.html">SDK DOCUMENT</a></li>
+            <li><a href="https://goo.gl/forms/jmXPlXu5b6nH7Ig62" target="_blank">
+                <button class="primary nav-apply">APPLY NOW</button></a></li>
+          </ul>
         </div>
       </nav>
-
-      <section class="cover-container">
-        <img src="img/cover.png"/>
+      <section class="section_1">
         <div class="cover-float-block">
-          <div class="heading-1">
-            VidSense<sup class="trademark">™</sup>
-          </div>
-          <div class="content">
-            Provide the best ads that suits your video content with a brand new way driven by AI.<br>
+          <div class="heading-1">VidSense<sup class="trademark">™</sup></div>
+          <div class="content">Provide the best ads that suits your video content with a brand new way driven by AI.<br>
             A novel service for online advertising on computer communication networks, streaming of data and R&D
             in the field of video AI.
-          </div>
-          <a href="https://goo.gl/forms/jmXPlXu5b6nH7Ig62" target="_blank">
-            <button class="primary">APPLY NOW</button>
-          </a>
+          </div><a href="https://goo.gl/forms/jmXPlXu5b6nH7Ig62" target="_blank">
+            <button class="primary">APPLY NOW</button></a>
         </div>
       </section>
-      <section class="banner">
-        Why people choose VidSense
-      </section>
-
+      <section class="banner">Why people choose VidSense</section>
       <section class="container section-2">
         <div class="row">
-          <div class="col-sm-6 col-12 title-text">
-            Keeping the whole pie
-            <div class="content-bg">
-              You can keep 90% of ad revenue. It’s double the revenue compared to other video/media platforms.
-            </div>
+          <div class="col-xs-12 col-sm-6 col-lg-6 title-text">Keeping the whole pie
+            <div class="content-bg">You can keep 90% of ad revenue. It’s double the revenue compared to other video/media platforms.</div>
           </div>
-          <div class="col-sm-6 col-12">
-            <img src="img/section2Grphic.png">
-          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-6"><img class="rwdImg" src="assets/img/section2Grphic.png"></div>
         </div>
       </section>
-
       <section class="container section-3">
         <div class="row">
-          <div class="col-sm-12 col-md-6 title-text">
-            Ads actually get clicks
-            <div class="content-bg">
-              Advertise at the right time to maximize ad effectiveness. Increase advertising CTR effectiveness.
-            </div>
+          <div class="col-sm-12 col-md-6 title-text">Ads actually get clicks
+            <div class="content-bg">Advertise at the right time to maximize ad effectiveness. Increase advertising CTR effectiveness.</div>
           </div>
-          <div class="col-sm-6 col-12">
-            <img src="img/sec03Graphic.png">
-          </div>
+          <div class="col-sm-6 col-12"><img class="rwdImg" src="assets/img/sec03Graphic.png"></div>
         </div>
       </section>
-
       <section class="container section-4">
         <div class="row">
-          <div class="col-sm-6 col-12 title-text">
-            Cross-Device Experience
+          <div class="col-sm-6 col-12 title-text">Cross-Device Experience
             <div class="content-bg">
               Display ads formatted Multi-Screen ads
               Support web and all smart tablets with iOS or Android OS.
             </div>
           </div>
-          <div class="col-sm-6 col-12">
-            <img src="img/sec04Graphic.png">
-          </div>
+          <div class="col-sm-6 col-12"><img class="rwdImg" src="assets/img/sec04Graphic.png"></div>
         </div>
       </section>
-
       <section class="container section-5">
         <div class="row">
           <div class="col-sm-12 col-12 title-text">Carefully tailored ads for each key moment</div>
-          <div class="col-sm-6 col-12">
-            <img src="img/section05_01.png">
-          </div>
+          <div class="col-sm-6 col-12"><img class="rwdImg" src="assets/img/section05_01.png"></div>
           <div class="col-sm-6 col-12">
             <h3>Skippable Pre-roll video ads</h3>
             <p>
@@ -113,7 +86,6 @@
           </div>
         </div>
       </section>
-
       <section class="container section-6">
         <div class="row">
           <div class="col-sm-12 col-12 title-text">Easy to Apply</div>
@@ -134,20 +106,30 @@
           </div>
         </div>
       </section>
-
-      <section class="container section-7">
-        <a href="https://goo.gl/forms/jmXPlXu5b6nH7Ig62" target="_blank">
-          <button class="primary">APPLY NOW</button>
-        </a>
-      </section>
+      <section class="container section-7"><a href="https://goo.gl/forms/jmXPlXu5b6nH7Ig62" target="_blank">
+          <button class="primary">APPLY NOW</button></a></section>
       <footer class="footer">
-        <nav>
-          <a class="social-nav bg-facebook" href="https://zh-tw.facebook.com/viscovery.co/" target="_blank"></a>
-          <a class="social-nav bg-weibo" href="http://tw.weibo.com/viscovery" target="_blank"></a>
-          <a class="social-nav bg-linkedin" href="https://www.linkedin.com/company-beta/3637491/?pathWildcard=3637491" target="_blank"></a>
-        </nav>
+        <nav><a class="social-nav bg-facebook" href="https://zh-tw.facebook.com/viscovery.co/" target="_blank"></a><a class="social-nav bg-weibo" href="http://tw.weibo.com/viscovery" target="_blank"></a><a class="social-nav bg-linkedin" href="https://www.linkedin.com/company-beta/3637491/?pathWildcard=3637491" target="_blank"></a></nav>
         <p class="color-white-40a">Viscovery 2017 © Viscovery All rights reserved</p>
       </footer>
     </div>
   </body>
+  <script>
+    var navIsOpen=false;
+    document.getElementById("navToggle").addEventListener("click", navToggle);
+    function navToggle(){
+      navIsOpen = !navIsOpen;
+      var element = document.getElementById("nav");
+      var elementIcon = document.getElementById("navToggleIcon");
+      if(navIsOpen){
+        element.classList.add("navOpen");
+        elementIcon.classList.remove("fa-bars");
+        elementIcon.classList.add("fa-times");
+      }else{
+        element.classList.remove("navOpen");
+        elementIcon.classList.remove("fa-times");
+        elementIcon.classList.add("fa-bars");
+      }
+    }
+  </script>
 </html>

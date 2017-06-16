@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: GothamXlight;
+    src: url("../fonts/GOTHAM-XLIGHT.eot") format("eot"),url("../fonts/GOTHAM-XLIGHT.woff") format("woff"),url("../fonts/GOTHAM-XLIGHT.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: GothamLight;
+    src: url("../fonts/Gotham-Light.eot") format("eot"),url("../fonts/Gotham-Light.woff") format("woff"),url("../fonts/Gotham-Light.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: GothamThin;
+    src: url("../fonts/GOTHAM-THIN.eot") format("eot"),url("../fonts/GOTHAM-THIN.woff") format("woff"),url("../fonts/GOTHAM-THIN.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url("../fonts/Gotham-Regular.eot") format("eot"),url("../fonts/Gotham-Regular.woff") format("woff"),url("../fonts/Gotham-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: GothamMed;
+    src: url("../fonts/Gotham-Medium.eot") format("eot"),url("../fonts/Gotham-Medium.woff") format("woff"),url("../fonts/Gotham-Medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../fonts/Gotham-Bold.eot") format("eot"),url("../fonts/Gotham-Bold.woff") format("woff"),url("../fonts/Gotham-Bold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: GothamBlack;
+    src: url("../fonts/GOTHAM-BLACK.eot") format("eot"),url("../fonts/GOTHAM-BLACK.woff") format("woff"),url("../fonts/GOTHAM-BLACK.TTF") format("truetype")
+}
+
+.ff-Gotham-Reglular {
+    font-family: Gotham!important
+}
+
+.ff-Gotham-Bold {
+    font-family: GothamBold!important
+}
+
+.font-h1-xxl {
+    letter-spacing: 1px;
+    font-size: 70px;
+    font-weight: 800
+}
+
+.font-h1-xl {
+    font-size: 46px
+}
+
+.font-h1-lg,.font-h1-xl {
+    letter-spacing: 1px;
+    font-weight: 500
+}
+
+.font-h1-lg {
+    font-size: 36px
+}
+
+.font-h1 {
+    letter-spacing: 1px;
+    font-size: 32px;
+    font-weight: 500
+}
+
+.font-h2-lg {
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 400
+}
+
+.font-h2 {
+    font-size: 24px
+}
+
+.font-h2,.font-h3 {
+    letter-spacing: 1px;
+    font-weight: 500
+}
+
+.font-h3 {
+    font-size: 22px
+}
+
+.font-h6 {
+    font-size: 18px
+}
+
+.font-h6,.font-h6-sm {
+    letter-spacing: 1px;
+    font-weight: 600
+}
+
+.font-h6-sm {
+    font-size: 16px
+}
+
+.font-p-lg {
+    font-size: 15px
+}
+
+.font-p-lg,.font-p-md {
+    letter-spacing: 1px;
+    font-weight: 400
+}
+
+.font-p-md {
+    font-size: 14px
+}
+
+.font-p {
+    font-size: 13px
+}
+
+.font-p,.font-p-sm {
+    letter-spacing: 1px;
+    font-weight: 400
+}
+
+.font-p-sm {
+    font-size: 12px
+}
+
+.font-p-xs {
+    font-size: 11px;
+    -webkit-transform: scale(.92)
+}
+
+.font-p-xs,.font-small {
+    letter-spacing: 1px;
+    font-weight: 500
+}
+
+.font-small {
+    font-size: 10px;
+    -webkit-transform: scale(.84)
+}
