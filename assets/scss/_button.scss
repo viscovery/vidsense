@@ -7,8 +7,15 @@ button{
 button.primary {
   background: #E24522;
   color: #FFFFFF;
-  &:hover{
-    background: #E85E12;
+}
+
+@media (hover: hover) {
+  button.primary {
+    background: #E24522;
+    color: #FFFFFF;
+    &:hover{
+      background: #E85E12;
+    }
   }
 }
 button.nav-apply {

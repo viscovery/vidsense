@@ -15,6 +15,70 @@
     height: 32px;
     background: url("../img/logo_red.svg") no-repeat ;
   }
+  .navToggle{
+    float:right;
+    outline: none;
+    display: none;
+    margin-right: 10px;
+    background: #fff;
+    i{
+      font-size: 3em;
+      color: #E44412;
+    }
+    &:hover{
+      background: #E44412;
+      i{
+        color: #fff;
+      }
+    }
+  }
+}
+
+.nav-items {
+  height: 60px;
+  ul{
+    display: block;
+    margin: 0;
+    height: 60px;
+    line-height:57px;
+    li{
+      height: 60px;
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+      list-style: none;
+      padding: 0 1em;
+      a{
+        color: rgba(26,10,10,.4);
+        text-decoration: none;
+      }
+    }
+    li:after, li.active:after {
+      content: '';
+      display: block;
+      line-height:45px;
+      margin: auto;
+      height: 3px;
+      width: 0px;
+      background: transparent;
+      transition: width .3s ease, background-color .3s ease;
+    }
+    li.active {
+      a{
+        color: rgba(26,10,10,1);
+      }
+    }
+    li.active:after {
+      width: 100%;
+      background: #F31F00;
+      a {
+        color: rgba(26,10,10,1);
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
   .nav-items {
     height: 60px;
     ul{
@@ -63,23 +127,6 @@
       }
     }
   }
-  .navToggle{
-    float:right;
-    outline: none;
-    display: none;
-    margin-right: 10px;
-    background: #fff;
-    i{
-      font-size: 3em;
-      color: #E44412;
-    }
-    &:hover{
-      background: #E44412;
-      i{
-        color: #fff;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -87,7 +134,7 @@
     padding: 0 10px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px){
   .topnav{
     padding: 0;
   }
@@ -119,6 +166,13 @@
           float: none;
           line-height: 60px;
           padding: 20px 10px;
+        }
+        li.active:after {
+          width: 100%;
+          background: #F31F00;
+          a {
+            color: rgba(26,10,10,1);
+          }
         }
       }
     }
